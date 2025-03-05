@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News Laundry</title>
+    <link rel="icon" href="newsLaundrylogo.webp" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="main-nav container">
+        <a href="https://www.newslaundry.com/">
+          <img src="Newslaundry_logo_new.svg.png" alt="company logo" />
+        </a>
+
+        <div class="nav-links">
+          <ul>
+            <li
+              class="nav-item hover-link"
+              id="sports"
+              onclick="onNavItem('sports')"
+            >
+              Sports
+            </li>
+            <li
+              class="nav-item hover-link"
+              id="finance"
+              onclick="onNavItem('finance')"
+            >
+              Finance
+            </li>
+            <li
+              class="nav-item hover-link"
+              id="politics"
+              onclick="onNavItem('politics')"
+            >
+              Politics
+            </li>
+            <li
+              class="nav-item hover-link"
+              id="movies"
+              onclick="onNavItem('movies')"
+            >
+              Movies
+            </li>
+          </ul>
+        </div>
+
+        <div class="search-bar">
+          <input type="text" class="search-box" placeholder="e.g. Science" />
+          <button class="search-btn">Search</button>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="cards-container container flex"></div>
+
+      <template id="template-news-card">
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="https://www.pnj.com/gcdn/presto/2020/09/23/PPEN/a563bbca-33d9-4cc1-9afa-e1417154e335-2020.09.23-FLA-GAETZ-HURRICANE-MISSING.jpg"
+              alt=""
+              id="newsImg"
+            />
+          </div>
+          <div class="card-content">
+            <h3 id="news-header">This is heading</h3>
+            <h6 id="news-source" class="news-source">News Laundry</h6>
+            <p class="news-desc" id="news-desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi
+              eligendi porro cupiditate voluptatum culpa, earum id maiores
+              sapiente molestias ullam!
+            </p>
+          </div>
+        </div>
+      </template>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+
